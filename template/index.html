@@ -24,6 +24,41 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* Typography adjustments for a more consistent visual hierarchy */
+            #activities > .resume-section-content > ul {
+                font-size: 1.05rem;
+                line-height: 1.7;
+                padding-left: 1.25rem;
+            }
+
+            #activities > .resume-section-content > ul > li {
+                margin-bottom: 1.1rem;
+            }
+
+            #activities > .resume-section-content > ul > li > ul {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                margin-top: 0.35rem;
+                padding-left: 1.4rem;
+            }
+
+            #experience .subheading,
+            #education .subheading {
+                font-size: 1.05rem;
+            }
+
+            #experience .text-primary,
+            #education .text-primary {
+                font-size: 1rem;
+            }
+
+            #hobbies .lead {
+                font-size: 1.05rem !important;
+                line-height: 1.7;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -80,7 +115,50 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Activities</h2>
                     <ul>
-                        <li>YANS2024(大阪)でのポスター発表<br>RAGを用いたLLMによる偽情報検出手法の検討, 山田 美優, 荒瀬 由紀 (東工大)</li>
+                        <li>
+                            <a href="https://huggingface.co/datasets/llm-jp/JSFactCheckBench" target="_blank">
+                                JSFactCheckBenchを公開
+                            </a><br>
+                            Hugging Face上で日本語のファクトチェック用データセットJSFactCheckBenchを公開
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2608.15804" target="_blank">
+                                arXivでの論文公開
+                            </a><br>
+                            Hallucination Span Detection with Input-Side Evidence Alignment,&nbsp;
+                            Miyu Yamada, Yuki Arase (Science Tokyo)
+                        </li>
+                        <li>
+                            YANS2026(仙台)でのポスター発表<br>入力テキストとのアライメントを提供するハルシネーション検出手法, 山田 美優, 荒瀬 由紀 (科学大)
+                            <ul>
+                                <li>🎉スポンサー賞 (株式会社Acompany) 受賞</li>
+                            </ul>
+                        </li>
+                        <li>
+                            YANS2026(仙台)でのハッカソン参加
+                            <ul>
+                                <li>🎉YANS委員特別賞受賞</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/4E5-GS-11b-01" target="_blank">
+                                JSAI2026(高崎)での口頭発表
+                            </a><br>
+                            ポリシーフィルタリングによる効率的な大規模言語モデル向けガードレール, 山田 美優 (科学大) , 伊東 邦大 (NEC)
+                        </li>
+                        <li>
+                            <a href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B1-19.pdf" target="_blank">
+                                NLP2026(宇都宮)でのポスター発表
+                            </a><br>
+                            マスク予測モデルを用いた軽量なハルシネーションのスパン検出手法, 山田 美優, 荒瀬 由紀 (科学大)
+                        </li>
+                        <li>
+                            <a href="https://aclanthology.org/2025.acl-srw.44/" target="_blank">
+                                ACL2025 SRW (Vienna) でのポスター発表
+                            </a><br>
+                            Light-Weight Hallucination Detection using Contrastive Learning for Conditional Text Generation,&nbsp;
+                            Miyu Yamada, Yuki Arase (Science Tokyo)
+                        </li>
                         <li>
                             <a href="https://www.anlp.jp/proceedings/annual_meeting/2025/pdf_dir/P7-1.pdf" target="_blank">
                                 NLP2025(長崎)でのポスター発表
@@ -90,44 +168,7 @@
                                 <li>🎉スポンサー賞 (PKSHA Technology) 受賞</li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="https://aclanthology.org/2025.acl-srw.44/" target="_blank">
-                                ACL2025 SRW (Vienna) でのポスター発表
-                            </a><br>
-                            Light-Weight Hallucination Detection using Contrastive Learning for Conditional Text Generation, 
-                            Miyu Yamada, Yuki Arase (Science Tokyo)
-                        </li>
-                        <li>
-                            <a href="https://www.anlp.jp/proceedings/annual_meeting/2026/pdf_dir/B1-19.pdf" target="_blank">
-                                NLP2026(宇都宮)でのポスター発表
-                            </a><br>
-                            マスク予測モデルを用いた軽量なハルシネーションのスパン検出手法, 山田 美優, 荒瀬 由紀 (科学大)
-                        </li>
-                        <li>
-                            <a href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/4E5-GS-11b-01" target="_blank">
-                                JSAI2026(高崎)での口頭発表
-                            </a><br>
-                            ポリシーフィルタリングによる効率的な大規模言語モデル向けガードレール, 山田 美優 (科学大) , 伊東 邦大 (NEC)
-                        </li>
-                        <li>
-                            YANS2026(仙台)でのハッカソン参加
-                            <ul>
-                                <li>🎉YANS委員特別賞受賞</li>
-                            </ul>
-                        </li>
-                        <li>
-                            YANS2026(仙台)でのポスター発表<br>入力テキストとのアライメントを提供するハルシネーション検出手法, 山田 美優, 荒瀬 由紀 (科学大)
-                            <ul>
-                                <li>🎉スポンサー賞 (株式会社Acompany) 受賞</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="https://arxiv.org/abs/2608.15804" target="_blank">
-                                arXivでの論文公開
-                            </a><br>
-                            Hallucination Span Detection with Input-Side Evidence Alignment, 
-                            Miyu Yamada, Yuki Arase (Science Tokyo)
-                        </li>
+                        <li>YANS2024(大阪)でのポスター発表<br>RAGを用いたLLMによる偽情報検出手法の検討, 山田 美優, 荒瀬 由紀 (東工大)</li>
                     </ul>
                 </div>
             </section>
